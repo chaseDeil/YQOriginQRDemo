@@ -12,8 +12,12 @@
 @interface YQQRViewController ()<AVCaptureMetadataOutputObjectsDelegate, UIAlertViewDelegate>
 {
     AVCaptureSession *session;
+    int num;
+    BOOL upOrdown;
+    NSTimer * timer;
 }
 
+@property (nonatomic, strong) UIImageView * line;
 
 @end
 
@@ -38,7 +42,51 @@
     layer.frame = self.view.layer.bounds;
     [self.view.layer addSublayer:layer];
     [session startRunning];
+    
+    // 控制扫描区域 参考：http://blog.csdn.net/lc_obj/article/details/41549469
+    [output setRectOfInterest:CGRectMake((124)/self.view.frame.size.height,((self.view.frame.size.width-300)/2)/self.view.frame.size.width,300/self.view.frame.size.height,300/self.view.frame.size.width)];
+    
+    self.view.backgroundColor = [UIColor grayColor];
+    
+    
+    UILabel * labIntroudction= [[UILabel alloc] initWithFrame:CGRectMake(self.view.frame.size.width / 2 - 145, 70, 290, 50)];
+    labIntroudction.backgroundColor = [UIColor clearColor];
+    labIntroudction.numberOfLines=2;
+    labIntroudction.textColor=[UIColor whiteColor];
+    labIntroudction.text=@"将二维码图像置于矩形方框内，离手机摄像头10CM左右，系统会自动识别。";
+    [self.view addSubview:labIntroudction];
+    
+    
+    UIImageView * imageView = [[UIImageView alloc]initWithFrame:CGRectMake(self.view.frame.size.width / 2 - 150, 125, 300, 300)];
+    imageView.image = [UIImage imageNamed:@"pick_bg"];
+    [self.view addSubview:imageView];
+    
+    upOrdown = NO;
+    num =0;
+    _line = [[UIImageView alloc] initWithFrame:CGRectMake(self.view.frame.size.width / 2 - 110, 125, 220, 2)];
+    _line.image = [UIImage imageNamed:@"line.png"];
+    [self.view addSubview:_line];
+    
+    timer = [NSTimer scheduledTimerWithTimeInterval:.02 target:self selector:@selector(YQAnimation) userInfo:nil repeats:YES];
+    
     // Do any additional setup after loading the view.
+}
+
+- (void)YQAnimation
+{
+    if (upOrdown) {
+        num--;
+        _line.frame = CGRectMake(self.view.frame.size.width / 2 - 110, 135 + 2 * num, 220, 2);
+        if (num == 0) {
+            upOrdown = NO;
+        }
+    } else {
+        num ++;
+        _line.frame = CGRectMake(self.view.frame.size.width / 2 - 110, 135 + 2 * num, 220, 2);
+        if (2*num == 280) {
+            upOrdown = YES;
+        }
+    }
 }
 
 - (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputMetadataObjects:(NSArray *)metadataObjects fromConnection:(AVCaptureConnection *)connection
