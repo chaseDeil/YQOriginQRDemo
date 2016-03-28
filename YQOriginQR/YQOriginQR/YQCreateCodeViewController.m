@@ -23,6 +23,14 @@
     self.imgView = [[UIImageView alloc] initWithFrame:CGRectMake(self.view.frame.size.width / 2 - 100, self.view.frame.size.height / 2 - 100, 200, 200)];
     _imgView.backgroundColor = [UIColor redColor];
     [self.view addSubview:_imgView];
+    
+    UIImageView *logoImg = [[UIImageView alloc] initWithFrame:CGRectMake(_imgView.frame.size.width / 2 - 20, _imgView.frame.size.height / 2 - 20, 40, 40)];
+    logoImg.layer.cornerRadius = 4.0f;
+    logoImg.clipsToBounds = YES;
+    logoImg.backgroundColor = [UIColor redColor];
+    logoImg.image = [UIImage imageNamed:@"29(1)"];
+    [_imgView addSubview:logoImg];
+    
     [self createQRCode];
     // Do any additional setup after loading the view.
 }
@@ -31,7 +39,7 @@
 {
     CIFilter *filter = [CIFilter filterWithName:@"CIQRCodeGenerator"];
     [filter setDefaults];
-    NSData *data = [@"www.baidu.com" dataUsingEncoding:NSUTF8StringEncoding];
+    NSData *data = [@"有限责任公司 注册号：210403000015196 名称：抚顺市固厦土建维修有限公司 企业类型：有限责任公司 地址：抚顺市东洲区搭连街新苑小区8号楼1单元203号 负责人：孙桂香；人民币贰佰万元整；成立日期：2015年01月23日；经营期限：自2015年01月23日至2035年01月23日；经营范围：土建维修、道路普通货物运输（依法须经批准的项目，经相关部门批准后方可开展经营活动）。http://gext.lngs.gov.cn" dataUsingEncoding:NSUTF8StringEncoding];
     [filter setValue:data forKey:@"inputMessage"];
     CIImage *outputImg = [filter outputImage];
     

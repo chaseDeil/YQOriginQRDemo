@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AB97A02F1C54D60E00D4AA6E /* YQCreateCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB97A02E1C54D60E00D4AA6E /* YQCreateCodeViewController.m */; };
+		ABC42F831CA8F9C200CF1247 /* 29(1).png in Resources */ = {isa = PBXBuildFile; fileRef = ABC42F821CA8F9C200CF1247 /* 29(1).png */; };
 		ABE2745A1C61CBE300ABC394 /* line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABE274581C61CBE300ABC394 /* line@2x.png */; };
 		ABE2745B1C61CBE300ABC394 /* pick_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABE274591C61CBE300ABC394 /* pick_bg@2x.png */; };
 		ABEE5E1C1C50A2FA00BC785A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEE5E1B1C50A2FA00BC785A /* main.m */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		AB97A02D1C54D60E00D4AA6E /* YQCreateCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQCreateCodeViewController.h; sourceTree = "<group>"; };
 		AB97A02E1C54D60E00D4AA6E /* YQCreateCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQCreateCodeViewController.m; sourceTree = "<group>"; };
+		ABC42F821CA8F9C200CF1247 /* 29(1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "29(1).png"; sourceTree = "<group>"; };
 		ABE274581C61CBE300ABC394 /* line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "line@2x.png"; sourceTree = "<group>"; };
 		ABE274591C61CBE300ABC394 /* pick_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pick_bg@2x.png"; sourceTree = "<group>"; };
 		ABEE5E171C50A2FA00BC785A /* YQOriginQR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YQOriginQR.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +113,7 @@
 		ABEE5E191C50A2FA00BC785A /* YQOriginQR */ = {
 			isa = PBXGroup;
 			children = (
+				ABC42F821CA8F9C200CF1247 /* 29(1).png */,
 				ABE274581C61CBE300ABC394 /* line@2x.png */,
 				ABE274591C61CBE300ABC394 /* pick_bg@2x.png */,
 				ABEE5E1D1C50A2FA00BC785A /* AppDelegate.h */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABE2745A1C61CBE300ABC394 /* line@2x.png in Resources */,
+				ABC42F831CA8F9C200CF1247 /* 29(1).png in Resources */,
 				ABEE5E2A1C50A2FA00BC785A /* LaunchScreen.storyboard in Resources */,
 				ABEE5E271C50A2FA00BC785A /* Assets.xcassets in Resources */,
 				ABEE5E251C50A2FA00BC785A /* Main.storyboard in Resources */,
