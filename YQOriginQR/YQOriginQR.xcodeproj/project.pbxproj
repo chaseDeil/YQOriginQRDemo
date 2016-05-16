@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB97A02F1C54D60E00D4AA6E /* YQCreateCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB97A02E1C54D60E00D4AA6E /* YQCreateCodeViewController.m */; };
-		ABC42F831CA8F9C200CF1247 /* 29(1).png in Resources */ = {isa = PBXBuildFile; fileRef = ABC42F821CA8F9C200CF1247 /* 29(1).png */; };
-		ABE2745A1C61CBE300ABC394 /* line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABE274581C61CBE300ABC394 /* line@2x.png */; };
-		ABE2745B1C61CBE300ABC394 /* pick_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABE274591C61CBE300ABC394 /* pick_bg@2x.png */; };
+		AB297C281CE951690054519C /* UIImage+YQBackImage.m in Sources */ = {isa = PBXBuildFile; fileRef = AB297C271CE951690054519C /* UIImage+YQBackImage.m */; };
+		AB297C2A1CE964520054519C /* backBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = AB297C291CE964520054519C /* backBtn.png */; };
+		ABCE9B571CABA57700362926 /* line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABCE9B4F1CABA57700362926 /* line@2x.png */; };
+		ABCE9B581CABA57700362926 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = ABCE9B501CABA57700362926 /* logo.png */; };
+		ABCE9B591CABA57700362926 /* pick_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABCE9B511CABA57700362926 /* pick_bg@2x.png */; };
+		ABCE9B5A1CABA57700362926 /* YQCreateCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCE9B541CABA57700362926 /* YQCreateCodeViewController.m */; };
+		ABCE9B5B1CABA57700362926 /* YQQRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCE9B561CABA57700362926 /* YQQRViewController.m */; };
 		ABEE5E1C1C50A2FA00BC785A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEE5E1B1C50A2FA00BC785A /* main.m */; };
 		ABEE5E1F1C50A2FA00BC785A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEE5E1E1C50A2FA00BC785A /* AppDelegate.m */; };
 		ABEE5E221C50A2FA00BC785A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEE5E211C50A2FA00BC785A /* ViewController.m */; };
@@ -19,7 +22,6 @@
 		ABEE5E2A1C50A2FA00BC785A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABEE5E281C50A2FA00BC785A /* LaunchScreen.storyboard */; };
 		ABEE5E351C50A2FA00BC785A /* YQOriginQRTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEE5E341C50A2FA00BC785A /* YQOriginQRTests.m */; };
 		ABEE5E401C50A2FA00BC785A /* YQOriginQRUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEE5E3F1C50A2FA00BC785A /* YQOriginQRUITests.m */; };
-		ABEE5E4F1C50AECA00BC785A /* YQQRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABEE5E4E1C50AECA00BC785A /* YQQRViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,11 +42,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AB97A02D1C54D60E00D4AA6E /* YQCreateCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQCreateCodeViewController.h; sourceTree = "<group>"; };
-		AB97A02E1C54D60E00D4AA6E /* YQCreateCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQCreateCodeViewController.m; sourceTree = "<group>"; };
-		ABC42F821CA8F9C200CF1247 /* 29(1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "29(1).png"; sourceTree = "<group>"; };
-		ABE274581C61CBE300ABC394 /* line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "line@2x.png"; sourceTree = "<group>"; };
-		ABE274591C61CBE300ABC394 /* pick_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pick_bg@2x.png"; sourceTree = "<group>"; };
+		AB297C261CE951690054519C /* UIImage+YQBackImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+YQBackImage.h"; sourceTree = "<group>"; };
+		AB297C271CE951690054519C /* UIImage+YQBackImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YQBackImage.m"; sourceTree = "<group>"; };
+		AB297C291CE964520054519C /* backBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backBtn.png; sourceTree = "<group>"; };
+		ABCE9B4F1CABA57700362926 /* line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "line@2x.png"; sourceTree = "<group>"; };
+		ABCE9B501CABA57700362926 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		ABCE9B511CABA57700362926 /* pick_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pick_bg@2x.png"; sourceTree = "<group>"; };
+		ABCE9B531CABA57700362926 /* YQCreateCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQCreateCodeViewController.h; sourceTree = "<group>"; };
+		ABCE9B541CABA57700362926 /* YQCreateCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQCreateCodeViewController.m; sourceTree = "<group>"; };
+		ABCE9B551CABA57700362926 /* YQQRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQQRViewController.h; sourceTree = "<group>"; };
+		ABCE9B561CABA57700362926 /* YQQRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQQRViewController.m; sourceTree = "<group>"; };
 		ABEE5E171C50A2FA00BC785A /* YQOriginQR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YQOriginQR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABEE5E1B1C50A2FA00BC785A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ABEE5E1D1C50A2FA00BC785A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -61,8 +68,6 @@
 		ABEE5E3B1C50A2FA00BC785A /* YQOriginQRUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YQOriginQRUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABEE5E3F1C50A2FA00BC785A /* YQOriginQRUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YQOriginQRUITests.m; sourceTree = "<group>"; };
 		ABEE5E411C50A2FA00BC785A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ABEE5E4D1C50AECA00BC785A /* YQQRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQQRViewController.h; sourceTree = "<group>"; };
-		ABEE5E4E1C50AECA00BC785A /* YQQRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQQRViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +95,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB297C221CE950D30054519C /* YQCategory */ = {
+			isa = PBXGroup;
+			children = (
+				AB297C261CE951690054519C /* UIImage+YQBackImage.h */,
+				AB297C271CE951690054519C /* UIImage+YQBackImage.m */,
+			);
+			path = YQCategory;
+			sourceTree = "<group>";
+		};
+		ABCE9B4E1CABA57700362926 /* YQImageResource */ = {
+			isa = PBXGroup;
+			children = (
+				AB297C291CE964520054519C /* backBtn.png */,
+				ABCE9B4F1CABA57700362926 /* line@2x.png */,
+				ABCE9B501CABA57700362926 /* logo.png */,
+				ABCE9B511CABA57700362926 /* pick_bg@2x.png */,
+			);
+			path = YQImageResource;
+			sourceTree = "<group>";
+		};
+		ABCE9B521CABA57700362926 /* YQMainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ABCE9B531CABA57700362926 /* YQCreateCodeViewController.h */,
+				ABCE9B541CABA57700362926 /* YQCreateCodeViewController.m */,
+				ABCE9B551CABA57700362926 /* YQQRViewController.h */,
+				ABCE9B561CABA57700362926 /* YQQRViewController.m */,
+			);
+			path = YQMainViewController;
+			sourceTree = "<group>";
+		};
 		ABEE5E0E1C50A2FA00BC785A = {
 			isa = PBXGroup;
 			children = (
@@ -113,17 +149,13 @@
 		ABEE5E191C50A2FA00BC785A /* YQOriginQR */ = {
 			isa = PBXGroup;
 			children = (
-				ABC42F821CA8F9C200CF1247 /* 29(1).png */,
-				ABE274581C61CBE300ABC394 /* line@2x.png */,
-				ABE274591C61CBE300ABC394 /* pick_bg@2x.png */,
+				AB297C221CE950D30054519C /* YQCategory */,
+				ABCE9B4E1CABA57700362926 /* YQImageResource */,
+				ABCE9B521CABA57700362926 /* YQMainViewController */,
 				ABEE5E1D1C50A2FA00BC785A /* AppDelegate.h */,
 				ABEE5E1E1C50A2FA00BC785A /* AppDelegate.m */,
 				ABEE5E201C50A2FA00BC785A /* ViewController.h */,
 				ABEE5E211C50A2FA00BC785A /* ViewController.m */,
-				AB97A02D1C54D60E00D4AA6E /* YQCreateCodeViewController.h */,
-				AB97A02E1C54D60E00D4AA6E /* YQCreateCodeViewController.m */,
-				ABEE5E4D1C50AECA00BC785A /* YQQRViewController.h */,
-				ABEE5E4E1C50AECA00BC785A /* YQQRViewController.m */,
 				ABEE5E231C50A2FA00BC785A /* Main.storyboard */,
 				ABEE5E261C50A2FA00BC785A /* Assets.xcassets */,
 				ABEE5E281C50A2FA00BC785A /* LaunchScreen.storyboard */,
@@ -262,12 +294,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABE2745A1C61CBE300ABC394 /* line@2x.png in Resources */,
-				ABC42F831CA8F9C200CF1247 /* 29(1).png in Resources */,
+				AB297C2A1CE964520054519C /* backBtn.png in Resources */,
+				ABCE9B571CABA57700362926 /* line@2x.png in Resources */,
+				ABCE9B591CABA57700362926 /* pick_bg@2x.png in Resources */,
 				ABEE5E2A1C50A2FA00BC785A /* LaunchScreen.storyboard in Resources */,
+				ABCE9B581CABA57700362926 /* logo.png in Resources */,
 				ABEE5E271C50A2FA00BC785A /* Assets.xcassets in Resources */,
 				ABEE5E251C50A2FA00BC785A /* Main.storyboard in Resources */,
-				ABE2745B1C61CBE300ABC394 /* pick_bg@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,10 +326,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABEE5E221C50A2FA00BC785A /* ViewController.m in Sources */,
+				ABCE9B5A1CABA57700362926 /* YQCreateCodeViewController.m in Sources */,
+				AB297C281CE951690054519C /* UIImage+YQBackImage.m in Sources */,
+				ABCE9B5B1CABA57700362926 /* YQQRViewController.m in Sources */,
 				ABEE5E1F1C50A2FA00BC785A /* AppDelegate.m in Sources */,
 				ABEE5E1C1C50A2FA00BC785A /* main.m in Sources */,
-				ABEE5E4F1C50AECA00BC785A /* YQQRViewController.m in Sources */,
-				AB97A02F1C54D60E00D4AA6E /* YQCreateCodeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
